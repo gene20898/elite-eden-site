@@ -1,11 +1,14 @@
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div className="flex flex-col items-center gap-2">
-        <h1 className="text-4xl text-red-500 font-bold">
-          Welcome to the Home Page
-        </h1>
+    <section>
+      <div className="h-132 w-full">
+        <div className="h-full w-full">
+          <img className="h-full w-full object-cover" src="banner1.avif" />
+        </div>
+        <div className="h-full w-full">
+          <img className="h-full w-full object-cover" src="banner2.avif" />
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
