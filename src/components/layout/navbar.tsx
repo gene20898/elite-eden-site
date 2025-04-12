@@ -22,9 +22,20 @@ const Navbar = () => {
             </button>
 
             {/* Logo */}
-            <Link href="/" className="flex-shrink-0">
-              <h1 className="font-serif text-2xl uppercase">Elite Eden</h1>
-              <p className="text-center text-xs">Premium Trees and Plants</p>
+            <Link href="/" className="flex flex-shrink-0 flex-col items-center">
+              {/* <h1 className="font-serif text-2xl uppercase">Elite Eden</h1>
+              <p className="text-center text-xs">Premium Trees and Plants</p> */}
+              <div className="flex items-center gap-2">
+                <img
+                  className="h-10 w-10"
+                  src="/elite-eden.svg"
+                  alt="Elite Eden"
+                />
+                <h1 className="font-serif text-2xl uppercase">Elite Eden</h1>
+              </div>
+              <p className="font-primary w-full text-center text-xs">
+                Premium Trees and Plants
+              </p>
             </Link>
 
             {/* Mobile Cart Icon */}
