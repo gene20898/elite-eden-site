@@ -6,7 +6,7 @@
 }
 
 @theme {
-  --font-display: 'Poppins', 'Sarabun', 'sans-serif';
+  --font-default: 'Poppins', 'Sarabun', 'sans-serif';
   --font-title: 'Merriweather', 'Noto Serif Thai', 'serif';
 
   --color-primary: #0f3437;

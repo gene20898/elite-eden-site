@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import {Search, User, ShoppingCart, MapPin, Menu} from 'lucide-react';
-import Globe from '@/icons/globe.svg';
 import {useState} from 'react';
+import EliteEden from '@/icons/components/EliteEden';
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -26,17 +26,12 @@ const Navbar = () => {
               {/* <h1 className="font-serif text-2xl uppercase">Elite Eden</h1>
               <p className="text-center text-xs">Premium Trees and Plants</p> */}
               <div className="flex items-center gap-2">
-                <img
-                  alt="Elite Eden"
-                  className="h-10 w-10"
-                  src="/elite-eden.svg"
-                />
+                <EliteEden className="h-10 w-10" />
                 <h1 className="font-serif text-2xl uppercase">Elite Eden</h1>
               </div>
               <p className="font-primary w-full text-center text-xs">
                 Premium Trees and Plants
               </p>
-              <Globe className="h-6 w-6 bg-amber-300" />
             </Link>
 
             {/* Mobile Cart Icon */}

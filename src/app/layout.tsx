@@ -46,9 +46,7 @@ export default function RootLayout({
       <head>
         <link href="/favicon.ico" rel="icon" />
       </head>
-      <body
-        className={`${merriweather.variable} ${poppins.variable} ${sarabun.variable} ${notoSerifThai.variable} antialiased`}
-      >
+      <body className="font-default antialiased">
         <Navbar />
         {children}
       </body>
