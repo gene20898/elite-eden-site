@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -6,15 +6,15 @@
 }
 
 @theme {
-  --font-display: "Poppins", "Sarabun", "sans-serif";
-  --font-title: "Merriweather", "Noto Serif Thai", "serif";
+  --font-display: 'Poppins', 'Sarabun', 'sans-serif';
+  --font-title: 'Merriweather', 'Noto Serif Thai', 'serif';
 
-  --color-primary: #0F3437; 
-  --color-accent: #D0AD6A;
-  --color-cream: #FDEECA;
-  --color-olive: #A3B18A;
-  --color-teal: #1B4D4B;
-  --color-bark: #8E735B;
-  --color-charcoal: #231F20;
-  --color-mist: #FAFAFA;
+  --color-primary: #0f3437;
+  --color-accent: #d0ad6a;
+  --color-cream: #fdeeca;
+  --color-olive: #a3b18a;
+  --color-teal: #1b4d4b;
+  --color-bark: #8e735b;
+  --color-charcoal: #231f20;
+  --color-mist: #fafafa;
 }

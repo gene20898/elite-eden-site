@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import Link from "next/link";
-import { Search, User, ShoppingCart, MapPin, Menu } from "lucide-react";
-
+import Link from 'next/link';
+import {Search, User, ShoppingCart, MapPin, Menu} from 'lucide-react';
+import Globe from '@/icons/globe.svg';
+import {useState} from 'react';
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -22,20 +22,21 @@ const Navbar = () => {
             </button>
 
             {/* Logo */}
-            <Link href="/" className="flex flex-shrink-0 flex-col items-center">
+            <Link className="flex flex-shrink-0 flex-col items-center" href="/">
               {/* <h1 className="font-serif text-2xl uppercase">Elite Eden</h1>
               <p className="text-center text-xs">Premium Trees and Plants</p> */}
               <div className="flex items-center gap-2">
                 <img
+                  alt="Elite Eden"
                   className="h-10 w-10"
                   src="/elite-eden.svg"
-                  alt="Elite Eden"
                 />
                 <h1 className="font-serif text-2xl uppercase">Elite Eden</h1>
               </div>
               <p className="font-primary w-full text-center text-xs">
                 Premium Trees and Plants
               </p>
+              <Globe className="h-6 w-6 bg-amber-300" />
             </Link>
 
             {/* Mobile Cart Icon */}
@@ -48,9 +49,9 @@ const Navbar = () => {
           <div className="hidden w-64 items-center rounded-lg border px-3 py-2 md:flex">
             <Search className="h-5 w-5 text-gray-400" />
             <input
-              type="text"
-              placeholder="Search"
               className="ml-2 flex-1 outline-none"
+              placeholder="Search"
+              type="text"
             />
           </div>
 
@@ -78,73 +79,73 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <ul className="hidden justify-center gap-x-12 py-4 md:flex">
             <li>
-              <Link href="/trees" className="hover:text-green-700">
+              <Link className="hover:text-green-700" href="/trees">
                 TREES
               </Link>
             </li>
             <li>
-              <Link href="/shrubs" className="hover:text-green-700">
+              <Link className="hover:text-green-700" href="/shrubs">
                 SHRUBS
               </Link>
             </li>
             <li>
-              <Link href="/perennials" className="hover:text-green-700">
+              <Link className="hover:text-green-700" href="/perennials">
                 PERENNIALS
               </Link>
             </li>
             <li>
-              <Link href="/on-sale" className="text-red-600 hover:text-red-700">
+              <Link className="text-red-600 hover:text-red-700" href="/on-sale">
                 ON SALE
               </Link>
             </li>
             <li>
-              <Link href="/new-arrivals" className="hover:text-green-700">
+              <Link className="hover:text-green-700" href="/new-arrivals">
                 NEW ARRIVALS
               </Link>
             </li>
             <li>
-              <Link href="/plant-care" className="hover:text-green-700">
+              <Link className="hover:text-green-700" href="/plant-care">
                 PLANT CARE
               </Link>
             </li>
           </ul>
 
           {/* Mobile Menu */}
-          <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}>
+          <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
             <ul className="flex flex-col space-y-4 py-4">
               <li>
-                <Link href="/trees" className="block hover:text-green-700">
+                <Link className="block hover:text-green-700" href="/trees">
                   TREES
                 </Link>
               </li>
               <li>
-                <Link href="/shrubs" className="block hover:text-green-700">
+                <Link className="block hover:text-green-700" href="/shrubs">
                   SHRUBS
                 </Link>
               </li>
               <li>
-                <Link href="/perennials" className="block hover:text-green-700">
+                <Link className="block hover:text-green-700" href="/perennials">
                   PERENNIALS
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/on-sale"
                   className="block text-red-600 hover:text-red-700"
+                  href="/on-sale"
                 >
                   ON SALE
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/new-arrivals"
                   className="block hover:text-green-700"
+                  href="/new-arrivals"
                 >
                   NEW ARRIVALS
                 </Link>
               </li>
               <li>
-                <Link href="/plant-care" className="block hover:text-green-700">
+                <Link className="block hover:text-green-700" href="/plant-care">
                   PLANT CARE
                 </Link>
               </li>
